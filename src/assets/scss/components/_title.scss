@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+  margin: 0 auto 2rem auto;
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+    @include atMdScreen {
+      font-size: 2rem;
+    }
+  }
+
+  &__underline {
+    width: 10rem;
+    height: 0.3rem;
+    background-color: $primary-color;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+}

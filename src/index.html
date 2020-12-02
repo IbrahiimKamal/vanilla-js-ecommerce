@@ -6,6 +6,11 @@
     <title>Elessi | Home</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <!-- GlideJS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
   </head>
   <body>
     <!-- ############### site navbar header ############### -->
@@ -107,7 +112,7 @@
     <!-- ############### End site navbar header ############### -->
 
     <!-- ############### banner section ############### -->
-    <div class="banner">
+    <div class="banner overflow-hidden">
       <div class="banner__hero">
         <h3
           class="banner__subtitle"
@@ -143,6 +148,81 @@
       </div>
     </div>
     <!-- ############### End banner section ############### -->
+
+    <!-- ############### featured section ############### -->
+    <section class="featured-category py-5 overflow-hidden">
+      <div class="container">
+        <!-- global title -->
+        <div class="row">
+          <div class="title">
+            <span
+              class="title__heading"
+              data-aos="fade-right"
+              data-aos-delay="600"
+              >Featured Categories</span
+            >
+            <div
+              class="title__underline"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            ></div>
+          </div>
+        </div>
+        <!-- End global title -->
+        <div class="glide featured-category__slider">
+          <div data-glide-el="track" class="glide__track">
+            <ul class="glide__slides">
+              <li class="glide__slide featured-category__image-container">
+                <a href="#">
+                  <img
+                    class="featured-category__image same-width"
+                    src="./assets/images/home/featured/t-shirt-1.jpg"
+                  />
+                  <p class="featured-category__text">cloth</p>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img
+                    class="featured-category__image same-width"
+                    src="./assets/images/home/featured/mask1.jpg"
+                  />
+                  <p class="featured-category__text">medical mask</p>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img
+                    class="featured-category__image same-width"
+                    src="./assets/images/home/featured/airpod.jpeg"
+                  />
+                  <p class="featured-category__text">Airpods</p>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img
+                    class="featured-category__image same-width"
+                    src="./assets/images/home/featured/boot.jpg"
+                  />
+                  <p class="featured-category__text">boots</p>
+                </a>
+              </li>
+              <li class="glide__slide">
+                <a href="#">
+                  <img
+                    class="featured-category__image same-width"
+                    src="./assets/images/home/featured/bag13.jpg"
+                  />
+                  <p class="featured-category__text">bag</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ############### End featured section ############### -->
 
     <!-- ############### js file ############### -->
     <!-- ############### js file ############### -->

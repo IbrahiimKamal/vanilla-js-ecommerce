@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
+    "@glidejs/glide": "^3.4.1",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.3"
   }

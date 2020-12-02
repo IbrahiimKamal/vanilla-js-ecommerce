@@ -1,0 +1,13 @@
+.same-width {
+  width: 100%;
+  height: 218px;
+  border-radius: 0.7rem;
+
+  @include atSmallestScreen {
+    height: 160px;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

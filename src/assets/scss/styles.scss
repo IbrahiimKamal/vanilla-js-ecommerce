@@ -2,9 +2,14 @@
 @import './base/variables';
 @import './base/mixins';
 @import './base/global';
+@import './base/helper';
 
 // components
 @import './components/social-icons';
 @import './components/btn';
 @import './components/site-header';
 @import './components/banner';
+@import './components/title';
+
+// Home Page Styles
+@import './pages/home/featured-category';

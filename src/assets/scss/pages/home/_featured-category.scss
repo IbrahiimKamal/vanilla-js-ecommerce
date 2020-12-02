@@ -1,0 +1,13 @@
+.featured-category {
+  text-align: center;
+  &__text {
+    color: $text-color;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
