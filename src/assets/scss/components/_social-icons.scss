@@ -1,0 +1,23 @@
+.social-icons {
+  &__icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: $text-color;
+    border: 1px solid $border-color;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: $transition;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $primary-color;
+      color: $main-white;
+    }
+  }
+}

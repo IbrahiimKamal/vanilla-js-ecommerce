@@ -4,4 +4,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 // ##### import styles from scss
 import '../scss/styles.scss';
-console.log(`it's working`);
+
+// ##### Global Imports #####
+import './shared/toggleNavbar';
