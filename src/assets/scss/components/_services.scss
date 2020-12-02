@@ -1,0 +1,28 @@
+.services {
+  &__item {
+    border: 1px solid $border-color;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: $grey-text;
+    border-radius: 0.1rem;
+    margin-bottom: 1rem;
+
+    @include atLgScreen {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+  }
+}
