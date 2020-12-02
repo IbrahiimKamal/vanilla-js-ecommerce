@@ -7,10 +7,104 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
-    <div class="container">
-      <h1>bootstrap is working</h1>
-      <i class="fab fa-twitter"></i>
-    </div>
+    <!-- ############### site navbar header ############### -->
+    <header class="site-header">
+      <div class="container">
+        <!-- navbar -->
+        <nav class="site-header__navbar">
+          <!-- navbar toggle icon -->
+          <span class="site-header__toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+          <!-- navbar menu -->
+          <div class="site-header__list-overlay">
+            <div class="site-header__list-container">
+              <div class="site-header__inner-list-container">
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <ul class="site-header__list">
+                  <li class="site-header__item">
+                    <a href="index.html" class="site-header__link">Home</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="products.html" class="site-header__link"
+                      >Products</a
+                    >
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">About</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">FAQ</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">Blog</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="site-header__list-logo-container">
+                  <a href="index.html">
+                    <img
+                      src="./assets/images/logo.webp"
+                      alt="elesi company logo"
+                      class="site-header__list-logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navbar logo -->
+          <div class="site-header__logo-container">
+            <a href="index.html">
+              <img
+                src="./assets/images/logo.webp"
+                alt="Elessi company logo"
+                class="site-header__logo"
+              />
+            </a>
+          </div>
+          <!-- navbar icons -->
+          <div class="site-header__icons">
+            <span class="site-header__icon">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="site-header__icon">
+              <i class="far fa-heart"></i>
+            </span>
+            <span class="site-header__icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="site-header__count">0</span>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ############### site navbar header ############### -->
+
     <script src="./assets/js/pages/products.js"></script>
   </body>
 </html>
