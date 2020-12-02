@@ -1,0 +1,34 @@
+.offer {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &__image-container {
+    overflow: hidden;
+  }
+
+  &__image-container:hover &__image {
+    transform: scale(1.2);
+  }
+
+  &__image {
+    width: 100%;
+    transition: $transition;
+  }
+
+  &__hero {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    text-transform: capitalize;
+    line-height: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__text {
+    text-transform: capitalize;
+  }
+}
