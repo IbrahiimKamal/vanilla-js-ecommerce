@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "autoprefixer": {
+      "overrideBrowserslist": [
+          "> 1%",
+          "last 5 versions",
+          "ie >= 9"
+        ],
+      "grid": true
+    }
+  }
+}

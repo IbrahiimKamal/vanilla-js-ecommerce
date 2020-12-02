@@ -1,0 +1,36 @@
+{
+  "name": "vanilla-js-ecommerce",
+  "version": "1.0.0",
+  "description": "this is a vanilla javascript ecommerce project using modern technologies like ES6+ sass babel postcss html5 parcel-bundler and javascript third party libraries",
+  "main": "index.js",
+  "keywords": [
+    "javascript",
+    "vanilla javascript",
+    "ES6",
+    "ES6+",
+    "parcel-bundler",
+    "babel",
+    "sass",
+    "postcss",
+    "html",
+    "css"
+  ],
+  "author": "Ibrahim Kamal",
+  "license": "ISC",
+  "scripts": {
+    "dev": "parcel src/*.html --open",
+    "build": "parcel build src/*.html --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}
