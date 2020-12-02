@@ -1,0 +1,84 @@
+.banner {
+  // banner styles
+  min-height: 45vh;
+  background-image: url('../images/home/banner/banner1.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  // banner media query 768px
+  @include atMdScreen {
+    min-height: 60vh;
+  }
+
+  // banner image
+  &__image {
+    width: 100%;
+  }
+
+  // banner hero
+  &__hero {
+    position: absolute;
+    top: 37%;
+    left: 8%;
+
+    // banner hero media query 768px
+    @include atMdScreen {
+      top: 30%;
+    }
+  }
+
+  // banner hero subtitle
+  &__subtitle {
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: $letter-spacing;
+    color: $main-grey;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  // banner hero title
+  &__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+
+    // banner hero title span
+    &--promo-code {
+      color: $primary-color;
+    }
+
+    // & color -- offer banner in home page
+    &--and {
+      color: $main-black;
+    }
+
+    // banner hero title media query 768px
+    @include atMdScreen {
+      font-size: 3.4375rem;
+      line-height: 4.125rem;
+    }
+
+    &--offer {
+      @include atMdScreen {
+        font-size: 2rem;
+        line-height: 2.7rem;
+      }
+
+      @include atMdScreen {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+  }
+
+  // offer banner in home page
+  &--offer {
+    background-image: url('../images/home/banner/banner2.webp');
+    @include atMdScreen {
+      min-height: 50vh;
+    }
+  }
+}

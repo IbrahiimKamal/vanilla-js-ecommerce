@@ -1,0 +1,22 @@
+.site-button {
+  display: inline-block;
+  background-color: $primary-color;
+  color: $main-white;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.3rem;
+  box-shadow: -1px 1px 6px 0px rgba(11, 157, 138, 1);
+  font-size: 0.72rem;
+  letter-spacing: $small-letter-spacing;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &--small {
+    @include atSmallestScreen {
+      padding: 0.5rem 1rem;
+      font-size: 0.625rem;
+    }
+  }
+}
