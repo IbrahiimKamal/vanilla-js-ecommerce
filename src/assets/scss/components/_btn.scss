@@ -9,14 +9,22 @@
   letter-spacing: $small-letter-spacing;
   transition: $transition;
 
-  &:hover {
-    transform: translateY(-1px);
-  }
-
   &--small {
     @include atSmallestScreen {
       padding: 0.5rem 1rem;
       font-size: 0.625rem;
     }
+  }
+
+  &--normal {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(-2px);
   }
 }

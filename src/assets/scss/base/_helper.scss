@@ -11,3 +11,15 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+.margin-bottom {
+  margin-bottom: 1rem;
+
+  @include atLgScreen {
+    margin-bottom: 3rem;
+  }
+}
+
+.margin-right {
+  margin-right: 0.2rem;
+}

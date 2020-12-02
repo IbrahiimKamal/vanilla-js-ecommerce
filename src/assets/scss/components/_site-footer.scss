@@ -1,0 +1,35 @@
+.site-footer {
+  border-top: 1px solid $border-color;
+  text-align: left;
+
+  &__item {
+    padding: 0.8rem 0;
+    color: $text-color;
+    font-size: 14px;
+
+    &:nth-child(1) {
+      padding: 0;
+      color: $main-black;
+    }
+  }
+
+  &__link {
+    color: $text-color;
+    transition: $transition;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__placeholder {
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+    border: 1px solid $primary-color;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $primary-color;
+    }
+  }
+}
