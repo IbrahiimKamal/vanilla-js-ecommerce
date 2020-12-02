@@ -11,6 +11,21 @@
     border-radius: 50%;
     transition: $transition;
 
+    &:nth-child(1):hover {
+      background: #1877f2;
+    }
+
+    &:nth-child(2):hover {
+      background: #1da1f2;
+    }
+
+    &:nth-child(3):hover {
+      background: #ff0000;
+    }
+    &:nth-child(4):hover {
+      background: #c03c90;
+    }
+
     &:nth-child(4) {
       margin-right: 0;
     }
