@@ -1,0 +1,33 @@
+// ##### import external libraries
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+// ##### import styles from scss
+import '../../scss/styles.scss';
+
+// ##### Global Imports #####
+import '../shared/toggleNavbar.js';
+
+// specific imports
+import fetchData from '../utiles/fetchData';
+import { setupStore, store } from '../utiles/store';
+import displayData from '../utiles/displayData';
+import { getElement } from '../utiles/getElement';
+
+const init = async () => {
+  const products = await fetchData();
+
+  if (products) {
+    setupStore(products);
+
+    const masksProducts = store.filter((product) => product.title === 'mask');
+    displayData(masksProducts, getElement('#masks-store'));
+  }
+};
+
+// init AOS (animation) library
+AOS.init();
+
+window.addEventListener('DOMContentLoaded', init);

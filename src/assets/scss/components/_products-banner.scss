@@ -1,0 +1,39 @@
+.products-banner {
+  min-height: 60vh;
+  background-image: url('../images/products-banners/clothes-banner.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--masks {
+    background-image: url('../images/products-banners/mask-banner1.jpg');
+  }
+
+  &--boots {
+    background-image: url('../images/products-banners/boots-banner.jpg');
+  }
+
+  &--bags {
+    background-image: url('../images/products-banners/bags-banner.jpg');
+  }
+
+  &--phone {
+    background-image: url('../images/products-banners/pexels-cottonbro-5081400.jpg');
+  }
+
+  &__direction {
+    color: $main-white;
+    font-size: 2rem;
+  }
+
+  &__direction-link {
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

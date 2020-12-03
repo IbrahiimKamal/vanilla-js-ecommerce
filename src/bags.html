@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elessi | Home</title>
-    <!-- favicon -->
+    <title>Elessi | Bags</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
-    <!-- GlideJS -->
-    <link
-      rel="stylesheet"
-      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
   </head>
   <body>
     <!-- ############### site navbar header ############### -->
@@ -109,123 +103,22 @@
         </nav>
       </div>
     </header>
-    <!-- ############### End site navbar header ############### -->
+    <!-- ############### site navbar header ############### -->
 
     <!-- ############### banner section ############### -->
-    <div class="banner overflow-hidden">
-      <div class="banner__hero">
-        <h3
-          class="banner__subtitle"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="200"
-        >
-          limited time
-        </h3>
-        <h1
-          class="banner__title"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="400"
-        >
-          30% off <br />
-          <span
-            class="banner__title--promo-code"
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-delay="600"
-            >promo cod</span
-          >
-        </h1>
-        <a
-          href="#"
-          class="site-button site-button--small"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="600"
-          >shop now</a
-        >
+    <div class="products-banner products-banner--bags">
+      <div class="products-banner__hero">
+        <span class="products-banner__direction">
+          <a href="index.html" class="products-banner__direction-link">Home</a>
+          /
+          <span class="products-banner__current-direction">Bags</span>
+        </span>
       </div>
     </div>
     <!-- ############### End banner section ############### -->
 
-    <!-- ############### featured section ############### -->
-    <section class="featured-category py-5 overflow-hidden">
-      <div class="container">
-        <!-- global title -->
-        <div class="row">
-          <div class="title">
-            <span
-              class="title__heading"
-              data-aos="fade-right"
-              data-aos-delay="600"
-              >Featured Categories</span
-            >
-            <div
-              class="title__underline"
-              data-aos="fade-left"
-              data-aos-delay="600"
-            ></div>
-          </div>
-        </div>
-        <!-- End global title -->
-        <div class="glide featured-category__slider">
-          <div data-glide-el="track" class="glide__track">
-            <ul class="glide__slides">
-              <li class="glide__slide featured-category__image-container">
-                <a href="tshirt.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/t-shirt-1.jpg"
-                  />
-                  <p class="featured-category__text">cloth</p>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="masks.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/mask1.jpg"
-                  />
-                  <p class="featured-category__text">medical mask</p>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="phone.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/phon-cover.jpg"
-                  />
-                  <p class="featured-category__text">Airpods</p>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="boots.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/boot.jpg"
-                  />
-                  <p class="featured-category__text">boots</p>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="bags.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/bag13.jpg"
-                  />
-                  <p class="featured-category__text">bag</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ############### End featured section ############### -->
-
-    <!-- ############### recommend section ############### -->
-    <section class="products py-3 overflow-hidden">
+    <!-- ############### clothes section ############### -->
+    <section class="products py-5 overflow-hidden">
       <div class="container">
         <!-- global title -->
         <div class="row">
@@ -234,7 +127,7 @@
               class="title__heading"
               data-aos="fade-right"
               data-aos-delay="400"
-              >Recommend for you</span
+              >Clothes / Bags Store</span
             >
             <div
               class="title__underline"
@@ -244,265 +137,10 @@
           </div>
         </div>
         <!-- End global title -->
-        <div class="row" id="recommen-products"></div>
+        <div class="row" id="bags-store"></div>
       </div>
     </section>
-    <!-- ############### End recommend section ############### -->
-
-    <!-- ############### offer section ############### -->
-    <section class="py3 overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <!-- single item -->
-          <div
-            class="col col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
-                <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer3.webp"
-                  alt="offer"
-                />
-              </div>
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
-              </div>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div
-            class="col-12 col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
-                <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer1.webp"
-                  alt="offer"
-                />
-              </div>
-
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
-              </div>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div
-            class="col-12 col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
-                <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer2.webp"
-                  alt="offer"
-                />
-              </div>
-
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
-              </div>
-            </article>
-          </div>
-          <!-- End single item -->
-        </div>
-      </div>
-    </section>
-    <!-- ############### End offer section ############### -->
-
-    <!-- ############### offer banner section ############### -->
-    <div class="banner banner--offer">
-      <div class="banner__hero">
-        <h3 class="banner__subtitle" data-aos="fade-right" data-aos-delay="200">
-          limited time
-        </h3>
-        <h1
-          class="banner__title banner__title--offer"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        >
-          Up to 50% Off <br />
-          <span class="banner__title--promo-code">
-            All T-Shirt
-            <span
-              class="banner__title--and"
-              data-aos="fade-right"
-              data-aos-delay="400"
-              >&</span
-            >
-            Accessories</span
-          >
-        </h1>
-        <a
-          href="#"
-          class="site-button site-button--small"
-          data-aos="fade-right"
-          data-aos-delay="600"
-          >shop now</a
-        >
-      </div>
-    </div>
-    <!-- ############### End offer banner section ############### -->
-
-    <!-- ############### services section ############### -->
-    <section class="services py-5">
-      <div class="container">
-        <div class="row">
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-shipping-fast"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Free Shipping
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                Free Shipping for all US order
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-headset"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Support 24/7
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                We support 24h a day
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-redo"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                100% Money Back
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                You have 30 days to Return
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-gift"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Payment Secure
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                We ensure secure payment
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-        </div>
-      </div>
-    </section>
-    <!-- ############### End services section ############### -->
+    <!-- ############### End clothes section ############### -->
 
     <!-- ############### footer section ############### -->
     <footer class="site-footer py-5">
@@ -767,8 +405,6 @@
     </footer>
     <!-- ############### End footer section ############### -->
 
-    <!-- ############### js file ############### -->
-    <!-- ############### js file ############### -->
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/pages/bags.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 const URL =
-  'https://bitbucket.org/!api/2.0/snippets/kamalo11/9nab7z/ec948e9514d9f4ee8129f2e51d094774f5e347cf/files/ecommerce';
+  'https://bitbucket.org/!api/2.0/snippets/kamalo11/9nab7z/2ab26f49667b945a4e78679492fc7950bc1df3be/files/ecommerce.json';
 
 const fetchData = async () => {
   const response = await fetch(URL);
