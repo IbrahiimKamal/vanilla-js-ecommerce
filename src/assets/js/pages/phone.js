@@ -26,6 +26,8 @@ const init = async () => {
     const phoneProducts = store.filter((product) => product.title === 'phone');
     displayData(phoneProducts, getElement('#phone-store'));
   }
+
+  getElement('#loading').style.display = 'none';
 };
 
 // init AOS (animation) library

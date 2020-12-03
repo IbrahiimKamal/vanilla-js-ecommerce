@@ -26,6 +26,8 @@ const init = async () => {
     const masksProducts = store.filter((product) => product.title === 'mask');
     displayData(masksProducts, getElement('#masks-store'));
   }
+
+  getElement('#loading').style.display = 'none';
 };
 
 // init AOS (animation) library

@@ -57,6 +57,8 @@ window.addEventListener('DOMContentLoaded', async function () {
   } catch (err) {
     console.log(err);
   }
+
+  getElement('#loading').style.display = 'none';
 });
 
 // GlideJS Slider
