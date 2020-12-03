@@ -1,0 +1,38 @@
+.single-product-info {
+  &__title {
+    margin-bottom: 0.7rem;
+    color: $text-color;
+
+    @include atLgScreen {
+      font-size: 2rem;
+    }
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $text-color;
+    display: inline-block;
+  }
+
+  &__price-delete {
+    display: inline-block;
+    text-decoration: line-through;
+    color: red;
+    font-size: 1.5rem;
+  }
+
+  &__desc {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: $text-color;
+  }
+
+  &__payment {
+    margin-top: 2rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

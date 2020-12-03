@@ -17,9 +17,6 @@ import { setupStore, store } from './utiles/store';
 import displayData from './utiles/displayData';
 import { getElement } from './utiles/getElement';
 
-// select featured section
-const slider = getElement('.featured-category__slider');
-
 const init = async () => {
   const products = await fetchData();
 
@@ -34,7 +31,7 @@ const init = async () => {
 };
 
 // GlideJS Slider
-new Glide(slider, {
+new Glide(getElement('.featured-category__slider'), {
   perView: 5,
   draggable: true,
   type: 'carousel',

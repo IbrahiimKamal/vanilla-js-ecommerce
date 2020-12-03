@@ -5,12 +5,499 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elessi | Single Product</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <!-- GlideJS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <h1>bootstrap is working</h1>
-      <i class="fab fa-twitter"></i>
-    </div>
+    <!-- ############### site navbar header ############### -->
+    <header class="site-header">
+      <div class="container">
+        <!-- navbar -->
+        <nav class="site-header__navbar">
+          <!-- navbar toggle icon -->
+          <span class="site-header__toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+          <!-- navbar menu -->
+          <div class="site-header__list-overlay">
+            <div class="site-header__list-container">
+              <div class="site-header__inner-list-container">
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+                <ul class="site-header__list">
+                  <li class="site-header__item">
+                    <a href="index.html" class="site-header__link">Home</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="products.html" class="site-header__link"
+                      >Products</a
+                    >
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">About</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">FAQ</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">Blog</a>
+                  </li>
+
+                  <li class="site-header__item">
+                    <a href="#" class="site-header__link">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="site-header__list-logo-container">
+                  <a href="index.html">
+                    <img
+                      src="./assets/images/logo.webp"
+                      alt="elesi company logo"
+                      class="site-header__list-logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- navbar logo -->
+          <div class="site-header__logo-container">
+            <a href="index.html">
+              <img
+                src="./assets/images/logo.webp"
+                alt="Elessi company logo"
+                class="site-header__logo"
+              />
+            </a>
+          </div>
+          <!-- navbar icons -->
+          <div class="site-header__icons">
+            <span class="site-header__icon">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="site-header__icon">
+              <i class="far fa-heart"></i>
+            </span>
+            <span class="site-header__icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="site-header__count">0</span>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ############### site navbar header ############### -->
+
+    <!-- ############### banner section ############### -->
+    <div class="products-banner products-banner--single-product"></div>
+    <!-- ############### End banner section ############### -->
+
+    <section class="products py-3 pt-md-5 overflow-hidden">
+      <div class="container">
+        <!-- global title -->
+        <div class="row">
+          <div class="title">
+            <span
+              class="title__heading"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              >Product Info</span
+            >
+            <div
+              class="title__underline"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############### single product section ############### -->
+    <section class="single-product pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-md-4 mx-auto single-product__slider-container">
+            <div class="glide">
+              <div
+                class="glide__track single-product__slider"
+                data-glide-el="track"
+              >
+                <ul class="glide__slides">
+                  <li class="glide__slide single-product__image-container">
+                    <img
+                      src=""
+                      alt=""
+                      class="single-product__image"
+                      id="image-slider1"
+                    />
+                  </li>
+
+                  <li class="glide__slide single-product__image-container">
+                    <img
+                      src=""
+                      alt=""
+                      class="single-product__image"
+                      id="image-slider2"
+                    />
+                  </li>
+
+                  <li class="glide__slide single-product__image-container">
+                    <img
+                      src=""
+                      alt=""
+                      class="single-product__image"
+                      id="image-slider3"
+                    />
+                  </li>
+
+                  <li class="glide__slide single-product__image-container">
+                    <img src="" alt="" class="single-product__image" />
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Thumbnails -->
+              <div
+                class="glide__bullets single-product__thumbnail-container"
+                data-glide-el="controls[nav]"
+              >
+                <button
+                  class="glide__bullet single-product__thumbnail-btn"
+                  data-glide-dir="=0"
+                >
+                  <div class="thumbnail single-product__thumbnail">
+                    <img src="" class="single-product__image" id="thumbnail1" />
+                  </div>
+                </button>
+
+                <button
+                  class="glide__bullet single-product__thumbnail-btn"
+                  data-glide-dir="=1"
+                >
+                  <div class="thumbnail single-product__thumbnail">
+                    <img src="" class="single-product__image" id="thumbnail2" />
+                  </div>
+                </button>
+
+                <button
+                  class="glide__bullet single-product__thumbnail-btn"
+                  data-glide-dir="=2"
+                >
+                  <div class="thumbnail single-product__thumbnail">
+                    <img src="" class="single-product__image" id="thumbnail3" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mx-auto single-product-info">
+            <h3 class="single-product-info__title"></h3>
+            <span class="single-product-info__price"></span>
+            <span>---</span>
+            <span class="single-product-info__price-delete"></span>
+            <p class="single-product-info__desc"></p>
+            <button class="site-button site-button--cart" data-id="1">
+              Add To Cart
+            </button>
+            <div class="single-product-info__payment">
+              <img
+                src="./assets/images/payment.webp"
+                class="single-product-info__image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############### End single product section ############### -->
+
+    <!-- ############### footer section ############### -->
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row">
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-3 mx-auot margin-bottom">
+            <ul class="site-footer__list">
+              <li
+                class="site-footer__item margin-bottom"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <a href="index.html" class="site-footer__logo">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt="elesi company logo"
+                  />
+                </a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <p class="site-footer__text">Vanilla JavaScript Ecommerce</p>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <p class="site-footer__text">Ibrahim Kamal, Egypt.</p>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <p class="site-footer__text">(+02)-100-2001-50</p>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <p class="site-footer__text">Email@gmail.com</p>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <p class="site-footer__text">Elessi.Ecommerce.Com</p>
+              </li>
+            </ul>
+          </div>
+          <!-- End single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-3 mx-auot margin-bottom">
+            <ul class="site-footer__list">
+              <li class="site-footer__item margin-bottom">
+                <div class="social-icons">
+                  <a
+                    href=""
+                    class="social-icons__icon"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="social-icons__icon"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="social-icons__icon"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="social-icons__icon"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <a class="site-footer__link" href="#">Contact Us</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <a class="site-footer__link" href="#">Designers</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <a class="site-footer__link" href="#">Terms & Conditions</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <a class="site-footer__link" href="#">Returns & Exchanges</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <a class="site-footer__link" href="#">Shipping & Delivery</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="700"
+              >
+                <a class="site-footer__link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-3 mx-auot margin-bottom">
+            <ul class="site-footer__list">
+              <li
+                class="site-footer__item margin-bottom"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h2>Newsletter</h2>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <a class="site-footer__link" href="#">Clothing</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <a class="site-footer__link" href="#">Women</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <a class="site-footer__link" href="#">On Sale</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <a class="site-footer__link" href="#">Accessories</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <a class="site-footer__link" href="#">New</a>
+              </li>
+
+              <li
+                class="site-footer__item"
+                data-aos="fade-up"
+                data-aos-delay="700"
+              >
+                <a class="site-footer__link" href="#">Men</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-3 mx-auot">
+            <ul class="site-footer__list">
+              <li class="site-footer__item margin-bottom">
+                <form class="site-footer__form d-flex">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="flex-fill margin-right site-footer__placeholder"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  />
+                  <input
+                    type="submit"
+                    value="subscribe"
+                    class="site-button site-button--small site-button--normal"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  />
+                </form>
+              </li>
+
+              <li class="site-footer__item d-flex justify-content-between">
+                <p data-aos="fade-up" data-aos-delay="300">Monday - Friday</p>
+                <p data-aos="fade-up" data-aos-delay="400">08:00 - 20:00</p>
+              </li>
+
+              <li class="site-footer__item d-flex justify-content-between">
+                <p data-aos="fade-up" data-aos-delay="300">Saturday</p>
+                <p data-aos="fade-up" data-aos-delay="400">09:00 - 21:00</p>
+              </li>
+
+              <li class="site-footer__item d-flex justify-content-between">
+                <p data-aos="fade-up" data-aos-delay="300">Sunday</p>
+                <p data-aos="fade-up" data-aos-delay="400">13:00 - 22:00</p>
+              </li>
+            </ul>
+          </div>
+          <!-- End single item -->
+        </div>
+      </div>
+    </footer>
+    <!-- ############### End footer section ############### -->
+
     <script src="./assets/js/pages/singleProduct.js"></script>
   </body>
 </html>

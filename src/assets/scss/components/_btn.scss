@@ -27,4 +27,13 @@
     box-shadow: none;
     transform: translateY(-2px);
   }
+
+  &--cart {
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

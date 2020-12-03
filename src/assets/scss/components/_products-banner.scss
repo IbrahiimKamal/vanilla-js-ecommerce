@@ -24,6 +24,10 @@
     background-image: url('../images/products-banners/pexels-cottonbro-5081400.jpg');
   }
 
+  &--single-product {
+    background-image: url('../images/products-banners/clothes-banner.jpg');
+  }
+
   &__direction {
     color: $main-white;
     font-size: 2rem;
