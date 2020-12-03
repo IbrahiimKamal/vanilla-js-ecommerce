@@ -66,5 +66,10 @@
 
   &__product-price {
     margin-bottom: 0;
+
+    &--deleted {
+      text-decoration: line-through;
+      color: red;
+    }
   }
 }

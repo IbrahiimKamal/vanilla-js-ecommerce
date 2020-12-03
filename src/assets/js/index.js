@@ -11,10 +11,27 @@ import '../scss/styles.scss';
 // ##### Global Imports #####
 import './shared/toggleNavbar';
 
+// specific imports
+import fetchData from './utiles/fetchData';
+import { setupStore, store } from './utiles/store';
+import displayData from './utiles/displayData';
 import { getElement } from './utiles/getElement';
 
 // select featured section
 const slider = getElement('.featured-category__slider');
+
+const init = async () => {
+  const products = await fetchData();
+
+  if (products) {
+    setupStore(products);
+
+    const recommendProducts = store.filter(
+      (product) => product.recommend === true
+    );
+    displayData(recommendProducts, getElement('#recommen-products'));
+  }
+};
 
 // GlideJS Slider
 new Glide(slider, {
@@ -42,3 +59,5 @@ new Glide(slider, {
 
 // init AOS (animation) library
 AOS.init();
+
+window.addEventListener('DOMContentLoaded', init);
