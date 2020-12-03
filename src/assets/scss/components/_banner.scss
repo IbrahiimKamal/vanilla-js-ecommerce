@@ -5,28 +5,17 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  display: flex;
+  align-items: center;
 
   // banner media query 768px
   @include atMdScreen {
     min-height: 60vh;
   }
 
-  // banner image
-  &__image {
-    width: 100%;
-  }
-
   // banner hero
   &__hero {
-    position: absolute;
-    top: 37%;
-    left: 5%;
-
-    // banner hero media query 768px
-    @include atMdScreen {
-      top: 30%;
-    }
+    padding: 0 2rem;
   }
 
   // banner hero subtitle

@@ -1,5 +1,5 @@
 .products-banner {
-  min-height: 60vh;
+  min-height: 30vh;
   background-image: url('../images/products-banners/clothes-banner.jpg');
   background-position: center center;
   background-size: cover;
@@ -25,7 +25,7 @@
   }
 
   &--single-product {
-    background-image: url('../images/products-banners/clothes-banner.jpg');
+    background-image: url('../images/products-banners/global-banner.webp');
   }
 
   &__direction {

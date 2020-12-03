@@ -1,12 +1,19 @@
 // site header
 .site-header {
-  padding: 1rem 0;
+  padding: 1.3rem 0;
   background: $main-white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1111;
+  transition: $transition;
+  box-shadow: 0;
+
+  &--sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 12px 0px rgba(170, 170, 170, 1);
+  }
 
   // navbar
   &__navbar {

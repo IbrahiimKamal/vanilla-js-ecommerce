@@ -8,7 +8,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import '../../scss/styles.scss';
 
 // ##### Global Imports #####
-import '../shared/toggleNavbar.js';
+import '../shared/toggleNavbar';
+import '../shared/stickyNavbar';
 
 // specific imports
 import fetchData from '../utiles/fetchData';

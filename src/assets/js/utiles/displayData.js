@@ -40,7 +40,7 @@ const displayData = (products, element) => {
                   </a>
                 </div>
                 <span class="products__product-cart-icon" data-id="${id}">
-                  <i class="fas fa-shopping-bag bounce"></i>
+                  <i class="fas fa-shopping-bag"></i>
                 </span>
               </div>
               <div class="products__product-footer">

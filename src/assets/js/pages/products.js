@@ -7,3 +7,4 @@ import '../../scss/styles.scss';
 
 // ##### Global Imports #####
 import '../shared/toggleNavbar';
+import '../shared/stickyNavbar';

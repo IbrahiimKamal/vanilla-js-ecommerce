@@ -10,6 +10,7 @@ import '../../scss/styles.scss';
 
 // ##### Global Imports #####
 import '../shared/toggleNavbar';
+import '../shared/stickyNavbar';
 
 // specific imports
 import { getElement } from '../utiles/getElement';
@@ -29,12 +30,18 @@ window.addEventListener('DOMContentLoaded', async function () {
     console.log(singleProduct);
 
     document.title = `${singleProduct.name.toUpperCase()}`;
+
     getElement(
       '.single-product-info__title'
     ).textContent = `${singleProduct.name}`;
+
     getElement('.single-product-info__price').textContent = `${formatPrice(
       singleProduct.price
     )}`;
+
+    getElement(
+      '.single-product-info__price-delete'
+    ).textContent = `${formatPrice(singleProduct.price2)}`;
 
     getElement(
       '.single-product-info__desc'
