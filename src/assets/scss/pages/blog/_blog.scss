@@ -1,0 +1,32 @@
+.blog {
+  &__item {
+    border: 1px solid $border-color;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+  }
+
+  &__image-container {
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__footer {
+    padding: 0 2rem 1.5rem 2rem;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
+    color: $text-color;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: $text-color;
+  }
+}
