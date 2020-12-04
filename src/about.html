@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elessi | Home</title>
-    <!-- favicon -->
+    <title>Elessi | About Us</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
-    <!-- GlideJS -->
-    <link
-      rel="stylesheet"
-      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
   </head>
   <body>
     <!-- ############### site navbar header ############### -->
@@ -56,7 +50,7 @@
                   </li>
 
                   <li class="site-header__item">
-                    <a href="about.html" class="site-header__link">About</a>
+                    <a href="#" class="site-header__link">About</a>
                   </li>
 
                   <li class="site-header__item">
@@ -95,62 +89,28 @@
           </div>
           <!-- navbar icons -->
           <div class="site-header__icons">
-            <a href="singup.html" class="site-header__icon">
+            <span class="site-header__icon">
               <i class="fas fa-user"></i>
-            </a>
+            </span>
             <span class="site-header__icon">
               <i class="far fa-heart"></i>
             </span>
             <span class="site-header__icon">
               <i class="fas fa-shopping-cart"></i>
-              <span class="site-header__count bounce">0</span>
+              <span class="site-header__count">0</span>
             </span>
           </div>
         </nav>
       </div>
     </header>
-    <!-- ############### End site navbar header ############### -->
+    <!-- ############### site navbar header ############### -->
 
     <!-- ############### banner section ############### -->
-    <div class="banner overflow-hidden">
-      <div class="banner__hero">
-        <h3
-          class="banner__subtitle"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="200"
-        >
-          limited time
-        </h3>
-        <h1
-          class="banner__title"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="400"
-        >
-          30% off <br />
-          <span
-            class="banner__title--promo-code"
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-delay="600"
-            >promo cod</span
-          >
-        </h1>
-        <a
-          href="#"
-          class="site-button site-button--small"
-          data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="600"
-          >shop now</a
-        >
-      </div>
-    </div>
+    <div class="products-banner products-banner--single-product"></div>
     <!-- ############### End banner section ############### -->
 
-    <!-- ############### featured section ############### -->
-    <section class="featured-category py-5 overflow-hidden">
+    <!-- ############### global title ############### -->
+    <section class="py-5">
       <div class="container">
         <!-- global title -->
         <div class="row">
@@ -158,74 +118,105 @@
             <span
               class="title__heading"
               data-aos="fade-right"
-              data-aos-delay="600"
-              >Featured Categories</span
+              data-aos-delay="400"
+              >Why Choose Us?</span
             >
             <div
               class="title__underline"
               data-aos="fade-left"
-              data-aos-delay="600"
+              data-aos-delay="400"
             ></div>
           </div>
         </div>
         <!-- End global title -->
-        <div class="glide featured-category__slider">
-          <div data-glide-el="track" class="glide__track">
-            <ul class="glide__slides">
-              <li class="glide__slide featured-category__image-container">
-                <a href="tshirt.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/t-shirt-1.jpg"
-                  />
-                  <p class="featured-category__text">cloth</p>
-                </a>
+      </div>
+    </section>
+    <!-- ############### End global title ############### -->
+
+    <!-- ############### about section ############### -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <!-- single item -->
+          <div class="col-10 col-md-4 col-lg-3 mx-auto">
+            <div class="about__image-container">
+              <img
+                src="./assets/images/about/about-us.jpg"
+                alt="about us"
+                class="about__image"
+              />
+            </div>
+          </div>
+          <!-- end single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-6 mx-auto">
+            <div class="about__info">
+              <p class="about__info-text">
+                Nulla auctor mauris ut dui luctus semper. In hac habitasse
+                platea dictumst. Duis pellentesque ligula a risus suscipit
+                dignissim. Nunc non nisl lacus. Integer pharetra lacinia
+                dapibus. Donec eu dolor dui, vel posuere mauris.
+              </p>
+
+              <p class="about__info-text">
+                Pellentesque semper congue sodales. In consequat, metus eget con
+                sequat ornare, augue dolor blandit purus, vitae lacinia nisi
+                tellus in erat. Nulla ac justo eget massa aliquet sodales.
+                Maecenas mattis male suada sem, in fringilla massa dapibus quis.
+                Suspendisse aliquam leo id neque auctor molestie. Etiam at nulla
+                tellus.
+              </p>
+
+              <p class="about__info-text">
+                Nulla auctor mauris ut dui luctus semper. In hac habitasse
+                platea dictumst. Duis pellentesque ligula a risus suscipit
+                dignissim.
+              </p>
+            </div>
+          </div>
+          <!-- end single item -->
+
+          <!-- single item -->
+          <div class="col-10 col-md-6 col-lg-3 mx-auto">
+            <ul class="about__list">
+              <li class="about__list-item">
+                <span class="about__list-icon">
+                  <i class="fas fa-check"></i>
+                </span>
+                <p class="about__list-text">shipping & returns</p>
               </li>
-              <li class="glide__slide">
-                <a href="masks.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/mask1.jpg"
-                  />
-                  <p class="featured-category__text">medical mask</p>
-                </a>
+
+              <li class="about__list-item">
+                <span class="about__list-icon">
+                  <i class="fas fa-check"></i>
+                </span>
+                <p class="about__list-text">secure shopping</p>
               </li>
-              <li class="glide__slide">
-                <a href="phone.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/phon-cover.jpg"
-                  />
-                  <p class="featured-category__text">Airpods</p>
-                </a>
+
+              <li class="about__list-item">
+                <span class="about__list-icon">
+                  <i class="fas fa-check"></i>
+                </span>
+                <p class="about__list-text">international shipping</p>
               </li>
-              <li class="glide__slide">
-                <a href="boots.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/boot.jpg"
-                  />
-                  <p class="featured-category__text">boots</p>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="bags.html">
-                  <img
-                    class="featured-category__image same-width"
-                    src="./assets/images/home/featured/bag13.jpg"
-                  />
-                  <p class="featured-category__text">bag</p>
-                </a>
+
+              <li class="about__list-item">
+                <span class="about__list-icon">
+                  <i class="fas fa-check"></i>
+                </span>
+                <p class="about__list-text">group sales</p>
               </li>
             </ul>
           </div>
+          <!-- end single item -->
         </div>
       </div>
     </section>
-    <!-- ############### End featured section ############### -->
+    <!-- ############### End about section ############### -->
 
-    <!-- ############### recommend section ############### -->
-    <section class="products py-3 overflow-hidden">
+    <!-- ############### our member section ############### -->
+    <section class="py-5">
       <div class="container">
         <!-- global title -->
         <div class="row">
@@ -234,7 +225,7 @@
               class="title__heading"
               data-aos="fade-right"
               data-aos-delay="400"
-              >Recommend for you</span
+              >Our Member</span
             >
             <div
               class="title__underline"
@@ -244,265 +235,167 @@
           </div>
         </div>
         <!-- End global title -->
-        <div class="row" id="recommen-products"></div>
-      </div>
-    </section>
-    <!-- ############### End recommend section ############### -->
 
-    <!-- ############### offer section ############### -->
-    <section class="py3 overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <!-- single item -->
-          <div
-            class="col col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
+        <div class="row py-3">
+          <!-- single member -->
+          <div class="col-10 col-md-6 mx-auto about-member">
+            <div class="about-member__item">
+              <div class="about-member__image-container">
                 <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer3.webp"
-                  alt="offer"
+                  src="./assets/images/about/cl-image-1.jpg"
+                  alt="our member"
+                  class="about-member__image"
                 />
               </div>
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
-              </div>
-            </article>
-          </div>
-          <!-- End single item -->
+              <div class="about-member__info">
+                <h4 class="about-member__info-title">jennifer lawrence</h4>
+                <p class="about-member__info-job">art director</p>
+                <p class="about-member__info-desc">
+                  Donec dignissim, enim ac semper tempus, ligula neque pulvinar
+                  mi, sed facilisis arcu placerat consequat
+                </p>
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
 
-          <!-- single item -->
-          <div
-            class="col-12 col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single member -->
+
+          <!-- single member -->
+          <div class="col-10 col-md-6 mx-auto about-member">
+            <div class="about-member__item">
+              <div class="about-member__image-container">
                 <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer1.webp"
-                  alt="offer"
+                  src="./assets/images/about/cl-image-3.jpg"
+                  alt="our member"
+                  class="about-member__image"
                 />
               </div>
+              <div class="about-member__info">
+                <h4 class="about-member__info-title">jennifer lawrence</h4>
+                <p class="about-member__info-job">art director</p>
+                <p class="about-member__info-desc">
+                  Donec dignissim, enim ac semper tempus, ligula neque pulvinar
+                  mi, sed facilisis arcu placerat consequat
+                </p>
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
 
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
               </div>
-            </article>
+            </div>
           </div>
-          <!-- End single item -->
+          <!-- end single member -->
 
-          <!-- single item -->
-          <div
-            class="col-12 col-md-6 col-lg-4 mx-auto"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <article class="offer">
-              <div class="offer__image-container">
+          <!-- single member -->
+          <div class="col-10 col-md-6 mx-auto about-member">
+            <div class="about-member__item">
+              <div class="about-member__image-container">
                 <img
-                  class="offer__image"
-                  src="./assets/images/home/offer/offer2.webp"
-                  alt="offer"
+                  src="./assets/images/about/cl-image-3.jpg"
+                  alt="our member"
+                  class="about-member__image"
                 />
               </div>
+              <div class="about-member__info">
+                <h4 class="about-member__info-title">jennifer lawrence</h4>
+                <p class="about-member__info-job">art director</p>
+                <p class="about-member__info-desc">
+                  Donec dignissim, enim ac semper tempus, ligula neque pulvinar
+                  mi, sed facilisis arcu placerat consequat
+                </p>
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
 
-              <div class="offer__hero">
-                <h4 class="offer__title">
-                  bag with <br />
-                  rose pattern
-                </h4>
-                <p class="offer__text">salse of 25%</p>
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
               </div>
-            </article>
+            </div>
           </div>
-          <!-- End single item -->
+          <!-- end single member -->
+
+          <!-- single member -->
+          <div class="col-10 col-md-6 mx-auto about-member">
+            <div class="about-member__item">
+              <div class="about-member__image-container">
+                <img
+                  src="./assets/images/about/cl-image-1.jpg"
+                  alt="our member"
+                  class="about-member__image"
+                />
+              </div>
+              <div class="about-member__info">
+                <h4 class="about-member__info-title">jennifer lawrence</h4>
+                <p class="about-member__info-job">art director</p>
+                <p class="about-member__info-desc">
+                  Donec dignissim, enim ac semper tempus, ligula neque pulvinar
+                  mi, sed facilisis arcu placerat consequat
+                </p>
+                <div class="social-icons">
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+
+                  <a href="#" class="social-icons__icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single member -->
         </div>
       </div>
     </section>
-    <!-- ############### End offer section ############### -->
-
-    <!-- ############### offer banner section ############### -->
-    <div class="banner banner--offer">
-      <div class="banner__hero">
-        <h3 class="banner__subtitle" data-aos="fade-right" data-aos-delay="200">
-          limited time
-        </h3>
-        <h1
-          class="banner__title banner__title--offer"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        >
-          Up to 50% Off <br />
-          <span class="banner__title--promo-code">
-            All T-Shirt
-            <span
-              class="banner__title--and"
-              data-aos="fade-right"
-              data-aos-delay="400"
-              >&</span
-            >
-            Accessories</span
-          >
-        </h1>
-        <a
-          href="#"
-          class="site-button site-button--small"
-          data-aos="fade-right"
-          data-aos-delay="600"
-          >shop now</a
-        >
-      </div>
-    </div>
-    <!-- ############### End offer banner section ############### -->
-
-    <!-- ############### services section ############### -->
-    <section class="services py-5">
-      <div class="container">
-        <div class="row">
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-shipping-fast"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Free Shipping
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                Free Shipping for all US order
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-headset"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Support 24/7
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                We support 24h a day
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-redo"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                100% Money Back
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                You have 30 days to Return
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-
-          <!-- single item -->
-          <div class="col-10 col-md-6 col-lg-3 mx-auto">
-            <article
-              class="services__item"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <span
-                class="services__icon"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fas fa-gift"></i>
-              </span>
-              <h5
-                class="services__title"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Payment Secure
-              </h5>
-              <p
-                class="services__subtitle"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                We ensure secure payment
-              </p>
-            </article>
-          </div>
-          <!-- End single item -->
-        </div>
-      </div>
-    </section>
-    <!-- ############### End services section ############### -->
+    <!-- ############### End our member section ############### -->
 
     <!-- ############### footer section ############### -->
     <footer class="site-footer py-5">
@@ -767,8 +660,6 @@
     </footer>
     <!-- ############### End footer section ############### -->
 
-    <!-- ############### js file ############### -->
-    <!-- ############### js file ############### -->
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/pages/about.js"></script>
   </body>
 </html>

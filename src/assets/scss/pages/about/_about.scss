@@ -1,0 +1,107 @@
+.about {
+  &__image-container {
+    margin-bottom: 1.5rem;
+
+    @include atMdScreen {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__info {
+    margin-bottom: 1.5rem;
+
+    @include atMdScreen {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-text {
+    color: $text-color;
+    font-size: 12px;
+    line-height: 1.5;
+
+    &:nth-child(2) {
+      margin: 1rem 0;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include atLgScreen {
+      display: block;
+    }
+  }
+
+  & &__list-item {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    margin-bottom: 1rem;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-icon {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 14px;
+  }
+
+  &__list-text {
+    text-transform: capitalize;
+  }
+}
+
+.about-member {
+  &__item {
+    border: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    @include atLgScreen {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  &__image-container {
+    margin-bottom: 1rem;
+
+    @include atLgScreen {
+      margin-bottom: 0;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__info-title {
+    font-size: 15px;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+  }
+
+  &__info-job {
+    text-transform: capitalize;
+    color: $third-black;
+    font-size: 14px;
+    margin-bottom: 0.7rem;
+  }
+
+  &__info-desc {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}

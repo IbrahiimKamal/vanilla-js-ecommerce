@@ -1,0 +1,52 @@
+.form-group {
+  border: 2px solid $border-color2;
+  border-radius: 0.4rem;
+  padding: 3rem 3rem;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  &__control {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid $border-color2;
+    border-radius: 0.3rem;
+    font-family: inherit;
+    transition: $transition;
+
+    &:focus {
+      outline-color: #c8cbe0;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 100%;
+    background: inherit;
+    font-family: inherit;
+    outline: none;
+    border: 2px solid $border-color2;
+    border-radius: 0.3rem;
+    padding: 0.8rem 0;
+    position: relative;
+    text-transform: uppercase;
+    color: $text-color;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background: $main-black;
+      color: $main-white;
+      border-color: $main-black;
+    }
+  }
+}
