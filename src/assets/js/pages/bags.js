@@ -26,8 +26,6 @@ const init = async () => {
     const bagStore = store.filter((product) => product.title === 'bag');
     displayData(bagStore, getElement('#bags-store'));
   }
-
-  getElement('#loading').style.display = 'none';
 };
 
 // init AOS (animation) library

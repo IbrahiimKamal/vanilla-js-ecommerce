@@ -26,8 +26,6 @@ const init = async () => {
     const tshirtProducts = store.filter((product) => product.title === 'shirt');
     displayData(tshirtProducts, getElement('#tshirt-store'));
   }
-
-  getElement('#loading').style.display = 'none';
 };
 
 // init AOS (animation) library

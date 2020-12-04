@@ -29,8 +29,6 @@ const init = async () => {
     );
     displayData(recommendProducts, getElement('#recommen-products'));
   }
-
-  getElement('#loading').style.display = 'none';
 };
 
 // GlideJS Slider
