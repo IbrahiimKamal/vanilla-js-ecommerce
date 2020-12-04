@@ -1,13 +1,23 @@
 .form-group {
   border: 2px solid $border-color2;
   border-radius: 0.4rem;
-  padding: 3rem 3rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0px 0px 14px 0px rgba(234, 237, 255, 1);
 
+  @include atLgScreen {
+    padding: 3rem;
+  }
+
   &__title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 300;
+    font-size: 1.2rem;
+
+    @include atLgScreen {
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__control {
