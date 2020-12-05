@@ -11,6 +11,7 @@ import '../scss/styles.scss';
 // ##### Global Imports #####
 import './shared/toggleNavbar';
 import './shared/stickyNavbar';
+import './cart/toggleCart';
 
 // specific imports
 import fetchData from './utiles/fetchData';

@@ -19,7 +19,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     border-bottom: 1px solid $border-color;
     padding: 1.5rem 0;
   }
@@ -31,15 +30,13 @@
 
   &__close-icon {
     color: $text-color;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-left: 3rem;
     cursor: pointer;
   }
 
   &__content {
     background: $main-white;
-    width: 400px;
+    width: 100%;
     position: fixed;
     right: 0;
     height: 100vh;
@@ -50,6 +47,14 @@
 
     &--show {
       transform: translateX(0);
+    }
+
+    @include atMdScreen {
+      width: 40%;
+    }
+
+    @include atLgScreen {
+      width: 35%;
     }
   }
 
