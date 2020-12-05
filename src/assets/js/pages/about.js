@@ -10,6 +10,8 @@ import '../../scss/styles.scss';
 // ##### Global Imports #####
 import '../shared/toggleNavbar';
 import '../shared/stickyNavbar';
+import '../cart/toggleCart';
+import '../cart/setupCart';
 
 // init AOS (animation) library
 AOS.init();

@@ -12,6 +12,7 @@ import '../scss/styles.scss';
 import './shared/toggleNavbar';
 import './shared/stickyNavbar';
 import './cart/toggleCart';
+import './cart/setupCart';
 
 // specific imports
 import fetchData from './utiles/fetchData';

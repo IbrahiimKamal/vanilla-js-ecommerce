@@ -11,17 +11,23 @@ import '../../scss/styles.scss';
 // ##### Global Imports #####
 import '../shared/toggleNavbar';
 import '../shared/stickyNavbar';
+import '../cart/toggleCart';
+import '../cart/setupCart';
 
 // specific imports
 import { getElement } from '../utiles/getElement';
 import fetchData from '../utiles/fetchData';
 import { setupStore, store, findProduct } from '../utiles/store';
 import { formatPrice } from '../utiles/formatePrice';
+import { addToCart } from '../cart/setupCart';
+
+// cart product
+let productID;
 
 window.addEventListener('DOMContentLoaded', async function () {
   let singleProductID = window.location.search;
   singleProductID = parseInt(singleProductID.slice(4));
-  console.log(singleProductID);
+  productID = singleProductID;
 
   try {
     const products = await fetchData();
@@ -57,6 +63,10 @@ window.addEventListener('DOMContentLoaded', async function () {
   } catch (err) {
     console.log(err);
   }
+});
+
+getElement('.site-button--cart').addEventListener('click', function () {
+  addToCart(productID);
 });
 
 // GlideJS Slider

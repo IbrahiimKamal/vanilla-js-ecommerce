@@ -1,4 +1,5 @@
 import { formatPrice } from './formatePrice';
+import { addToCart } from '../cart/setupCart';
 
 const displayData = (products, element) => {
   // display products
@@ -62,7 +63,7 @@ const displayData = (products, element) => {
     const parent = e.target.parentElement;
 
     if (parent.classList.contains('products__product-cart-icon')) {
-      console.log('Hello');
+      addToCart(parseInt(parent.dataset.id));
     }
   });
 };
