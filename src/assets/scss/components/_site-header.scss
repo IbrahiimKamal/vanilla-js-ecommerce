@@ -3,7 +3,11 @@
   padding: 1.3rem 0;
   background: $main-white;
   transition: $transition;
-  box-shadow: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 
   &--sticky {
     position: sticky;
@@ -12,7 +16,7 @@
     width: 100%;
     z-index: 999;
     padding: 1rem 0;
-    box-shadow: 0px 0px 12px 0px rgba(170, 170, 170, 1);
+    // box-shadow: 0px 0px 12px 0px rgba(170, 170, 170, 1);
   }
 
   // navbar
